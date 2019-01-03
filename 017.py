@@ -14,28 +14,7 @@ for i in range(2,10):
             D[i*10] = D[i] + 2
         else:
             D[i*10 + j] = D[i*10] + D[j]
-for i in range(1,10):
-    for j in range(10):
-        for k in range(10):
-            if j == 0 and k == 0:
-                D[100*i] = D[i]+7
-            elif j == 0:
-                D[i*100+k] = D[i] + 10 + D[k]
-            else:
-                D[i*100 + 10*j + k] = D[i] + 10 + D[10*j+k]
-D[1000] = 11
-ans = 0
-for i in range(1,1001):
-    print(i,D[i])
-    ans += D[i]
-print( ans)
+for i in range(1,10):print( ans)
 for i in range(1,10):
     print(i,D[111*i])
 print(D[55])
-
-
-
-
-
-
-
